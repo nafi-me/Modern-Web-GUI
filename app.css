@@ -1,0 +1,72 @@
+/* Base look */
+.root {
+    -fx-font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    -fx-base: #0f1724;
+}
+
+/* HBox root main styling */
+.hbox {
+    -fx-background-color: linear-gradient(to bottom, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+}
+
+/* Sidebar */
+.sidebar {
+    -fx-background-color: linear-gradient(to bottom, #071024, #0b1220);
+    -fx-padding: 16;
+    -fx-pref-width: 300;
+    -fx-spacing: 12;
+}
+
+.logo {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #7c5cff, #00d4ff);
+    -fx-text-fill: white;
+    -fx-alignment: center;
+    -fx-min-width: 48;
+    -fx-min-height: 48;
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+    -fx-background-radius: 12;
+}
+
+.brand-title { -fx-text-fill: #e6eef8; -fx-font-size: 16; -fx-font-weight: 700; }
+.brand-sub { -fx-text-fill: #9aa4b2; -fx-font-size: 12; }
+
+.nav-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #9aa4b2;
+    -fx-padding: 8 10 8 10;
+    -fx-background-radius: 8;
+}
+.nav-btn:selected {
+    -fx-background-color: rgba(124,92,255,0.12);
+    -fx-text-fill: white;
+}
+
+/* Buttons */
+.button {
+    -fx-background-radius: 10;
+    -fx-padding: 8 12 8 12;
+}
+.button .small-btn {
+    -fx-font-size: 12;
+}
+
+/* Text fields */
+.text-field, .combo-box, .text-area {
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(255,255,255,0.06);
+    -fx-border-radius: 8;
+    -fx-text-fill: white;
+}
+
+/* Output area */
+.text-area:focused, .text-field:focused {
+    -fx-border-color: rgba(124,92,255,0.6);
+}
+
+/* Light mode variation */
+.root.light .sidebar {
+    -fx-background-color: linear-gradient(to bottom, #f7fbff, #ffffff);
+}
+.root.light .brand-title { -fx-text-fill: #0b1220 }
+.root.light .brand-sub { -fx-text-fill: #5e6b76 }
